@@ -88,7 +88,7 @@ namespace WordCounter.Tests
         
         }
         [TestMethod]
-        public void RepeatCounter_CountNumberOfMatches_String()
+        public void RepeatCounter_CountNumberOfMatches_Integer()
         {
             //Arrange
             string input = "hello";
@@ -103,7 +103,7 @@ namespace WordCounter.Tests
         
         }
         [TestMethod]
-        public void RepeatCounter_CountMatchesOnlyExactinput_String()
+        public void RepeatCounter_CountMatchesOnlyExactinput_Integer()
         {
             //Arrange
             string input = "hello";
@@ -118,7 +118,7 @@ namespace WordCounter.Tests
         
         }
         [TestMethod]
-        public void RepeatCounter_CountMatchesOnlyExactinput1_String()
+        public void RepeatCounter_CountMatchesOnlyExactinput1_Integer()
         {
             //Arrange
             string input = "shamonahello";
@@ -133,7 +133,7 @@ namespace WordCounter.Tests
         
         }
         [TestMethod]
-        public void RepeatCounter_CheckIfInputAndListEmpty_String()
+        public void RepeatCounter_CheckIfInputAndListEmpty_Integer()
         {
             //Arrange
             string input = "";

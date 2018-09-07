@@ -14,6 +14,7 @@ namespace WordCounter.Models
         {
             _input = input;
             _inputList = inputList;
+
         }
         // public string GetInput()
         // {
@@ -55,4 +56,17 @@ namespace WordCounter.Models
             return counter;
         }
     }
+}
+class Program
+{
+  public static void Main()
+  {
+    Console.WriteLine("Please enter a word");
+    string input = Console.ReadLine();
+    Console.WriteLine("Please enter a list of words");
+    List<string> inputList = new List<string>{};
+    inputList.Add(Console.ReadLine());
+    WordChecker checkWord = new WordChecker(input,inputList);
+    Console.WriteLine("Number of counts is " + checkWord.RepeatCounter());
+  }
 }
