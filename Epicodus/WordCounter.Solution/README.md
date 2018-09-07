@@ -19,7 +19,7 @@ A program that checks how frequently a word appears in a given string. The user 
 
 1. Clone this repository by using Terminal command:
 ```
-    $ git clone https://github.com/meriat/WordCounter.Solution.git
+    $ git clone https://github.com/meriat/Word-Counter.Solution.git
 ```
 2. Change into the work directory using Terminal command:
 ```
