@@ -9,7 +9,7 @@ namespace WordCounter.Tests
     public class WordCounterTest
     {
         [TestMethod]
-        public void IsWord_CheckIfInputIsValid_String()
+        public void IsWordEmpty_CheckIfInputIsValid_String()
         {
             //Arrange
             string input = "";
@@ -17,10 +17,25 @@ namespace WordCounter.Tests
             WordChecker newCount = new WordChecker(input,inputList);
             
             //Act
-             bool result = newCount.IsWordEmpty();
+             bool result = newCount.IsWordNotEmpty();
             
             //Assert
-            Assert.AreEqual(false, result);
+            Assert.AreEqual(true, result);
+        
+        }
+        [TestMethod]
+        public void IsWordNotEmpty_CheckIfInputIsValid_String()
+        {
+            //Arrange
+            string input = "hello";
+            List<string> inputList = new List<string> {"helo"};
+            WordChecker newCount = new WordChecker(input,inputList);
+            
+            //Act
+             bool result = newCount.IsWordNotEmpty();
+            
+            //Assert
+            Assert.AreEqual(true, result);
         
         }
     }

@@ -24,18 +24,23 @@ namespace WordCounter.Models
         //     return _inputList;
         // }
 
-        public bool IsWordEmpty()
+        public bool IsWordNotEmpty()
         {
             //check if empty
              if (!_inputList.Any() || _input == "")
             {
-               return false;
+               return true;
             }
-            else
+            else if(_input.Contains(_inputList[0]))
             {
                 return true;
             }
+            else
+            {
+                return false;
+            }
         }
+
 
         // public int RepeatCounter ()
         // {
