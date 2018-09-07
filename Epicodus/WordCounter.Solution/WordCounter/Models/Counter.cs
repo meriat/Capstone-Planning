@@ -24,36 +24,50 @@ namespace WordCounter.Models
         //     return _inputList;
         // }
 
-        public bool IsWordNotEmpty()
+        public bool IsWordEmpty()
         {
             //check if empty
              if (!_inputList.Any() || _input == "")
             {
                return true;
             }
-            // else if(_input.Contains(_inputList[0]))
-            // {
-            //     return true;
-            // }
             else
             {
-                while(!_inputList.Any())
-                {
-                    for(int i = 0; i <= _inputList.Count; i ++)
-                    {
-                        if(_input == _inputList[i])
-                        {
-                            return true;
-                        }
-                        else
-                        {
-                            return false;
-                        }
-                    }
-                }
-                 return true;
+                return false;
             }
         }
+        public int RepeatCounter()
+        {
+            int counter = 0;
+
+             if(_input.Contains(_inputList[0]))
+            {
+                counter++;
+            }
+            else
+            {
+                counter += 0;
+            }
+            return counter;
+        }
+           
+            // {
+                // while(!_inputList.Any())
+                // {
+                //     for(int i = 0; i <= _inputList.Count; i ++)
+                //     {
+                //         if(_input == _inputList[i])
+                //         {
+                //             return true;
+                //         }
+                //         else
+                //         {
+                //             return false;
+                //         }
+                //     }
+                // }
+            // }
+        
 
     }
 }

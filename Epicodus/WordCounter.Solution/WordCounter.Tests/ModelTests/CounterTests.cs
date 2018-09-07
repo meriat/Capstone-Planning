@@ -17,10 +17,59 @@ namespace WordCounter.Tests
             WordChecker newCount = new WordChecker(input,inputList);
             
             //Act
-             bool result = newCount.IsWordNotEmpty();
+             bool result = newCount.IsWordEmpty();
             
             //Assert
             Assert.AreEqual(true, result);
+
+        
+        }
+        [TestMethod]
+        public void IsWordEmpty_CheckIfListInputIsValid_String()
+        {
+            //Arrange
+            string input = "meria";
+            List<string> inputList = new List<string> {};
+            WordChecker newCount = new WordChecker(input,inputList);
+            
+            //Act
+             bool result = newCount.IsWordEmpty();
+            
+            //Assert
+            Assert.AreEqual(true, result);
+            
+        
+        }
+         [TestMethod]
+        public void IsWordEmpty_CheckIfWordInputIsValid_String()
+        {
+            //Arrange
+            string input = "";
+            List<string> inputList = new List<string> {"hey"};
+            WordChecker newCount = new WordChecker(input,inputList);
+            
+            //Act
+             bool result = newCount.IsWordEmpty();
+            
+            //Assert
+            Assert.AreEqual(true, result);
+            
+        
+        }
+        [TestMethod]
+        public void IsWordEmpty_CheckIfWordInputAndListIsValid_String()
+        {
+            //Arrange
+            string input = "hey";
+            List<string> inputList = new List<string> {"hey"};
+            WordChecker newCount = new WordChecker(input,inputList);
+            
+            //Act
+             bool result = newCount.IsWordEmpty();
+            
+            //Assert
+            Assert.AreEqual(false, result);
+            
         
         }
         [TestMethod]
@@ -32,26 +81,41 @@ namespace WordCounter.Tests
             WordChecker newCount = new WordChecker(input,inputList);
             
             //Act
-             bool result = newCount.IsWordNotEmpty();
+             int result = newCount.RepeatCounter();
             
             //Assert
-            Assert.AreEqual(true, result);
+            Assert.AreEqual(1, result);
         
         }
         [TestMethod]
-        public void IsWordNotEmpty_CheckIfWordContainsInput_String()
+        public void IsWordNotEmpty_CheckIfInputIsNotEqual_String()
         {
             //Arrange
             string input = "hello";
-            List<string> inputList = new List<string> {"hello","hey","hello"};
+            List<string> inputList = new List<string> {"hey"};
             WordChecker newCount = new WordChecker(input,inputList);
             
             //Act
-             bool result = newCount.IsWordNotEmpty();
+             int result = newCount.RepeatCounter();
             
             //Assert
-            Assert.AreEqual(true, result);
+            Assert.AreEqual(0, result);
         
         }
+        // [TestMethod]
+        // public void IsWordNotEmpty_CheckIfWordContainsInput_String()
+        // {
+        //     //Arrange
+        //     string input = "hello";
+        //     List<string> inputList = new List<string> {"hello","hey","hello"};
+        //     WordChecker newCount = new WordChecker(input,inputList);
+            
+        //     //Act
+        //      bool result = newCount.IsWordNotEmpty();
+            
+        //     //Assert
+        //     Assert.AreEqual(true, result);
+        
+        // }
     }
 }
