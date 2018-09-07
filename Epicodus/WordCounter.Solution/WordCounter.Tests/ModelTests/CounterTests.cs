@@ -57,7 +57,7 @@ namespace WordCounter.Tests
         
         }
         [TestMethod]
-        public void IsWordEmpty_CheckIfWordInputAndListIsValid_String()
+        public void IsWordEmpty_CheckIfInputNotValid_String()
         {
             //Arrange
             string input = "hey";
@@ -73,22 +73,7 @@ namespace WordCounter.Tests
         
         }
         [TestMethod]
-        public void IsWordNotEmpty_CheckIfInputIsEqual_String()
-        {
-            //Arrange
-            string input = "hello";
-            List<string> inputList = new List<string> {"hello"};
-            WordChecker newCount = new WordChecker(input,inputList);
-            
-            //Act
-             int result = newCount.RepeatCounter();
-            
-            //Assert
-            Assert.AreEqual(1, result);
-        
-        }
-        [TestMethod]
-        public void IsWordNotEmpty_CheckIfInputIsNotEqual_String()
+        public void RepeatCounter_CheckIfInputAndListNotEqual_String()
         {
             //Arrange
             string input = "hello";
@@ -103,22 +88,22 @@ namespace WordCounter.Tests
         
         }
         [TestMethod]
-        public void IsWordNotEmpty_CountMatchingWords_String()
+        public void RepeatCounter_CountNumberOfMatches_String()
         {
             //Arrange
             string input = "hello";
-            List<string> inputList = new List<string> {"hey","hello","ciao"};
+            List<string> inputList = new List<string> {"hey","hello","ciao","hello"};
             WordChecker newCount = new WordChecker(input,inputList);
             
             //Act
              int result = newCount.RepeatCounter();
             
             //Assert
-            Assert.AreEqual(1, result);
+            Assert.AreEqual(2, result);
         
         }
         [TestMethod]
-        public void IsWordNotEmpty_CountMatchingWordsFalse_String()
+        public void RepeatCounter_CountMatchesOnlyExactinput_String()
         {
             //Arrange
             string input = "hello";
@@ -133,7 +118,7 @@ namespace WordCounter.Tests
         
         }
         [TestMethod]
-        public void IsWordNotEmpty_CountMatchingWordsFalse1_String()
+        public void RepeatCounter_CountMatchesOnlyExactinput1_String()
         {
             //Arrange
             string input = "shamonahello";
@@ -145,6 +130,21 @@ namespace WordCounter.Tests
             
             //Assert
             Assert.AreEqual(0, result);
+        
+        }
+        [TestMethod]
+        public void RepeatCounter_CheckIfInputAndListEmpty_String()
+        {
+            //Arrange
+            string input = "";
+            List<string> inputList = new List<string> {};
+            WordChecker newCount = new WordChecker(input,inputList);
+            
+            //Act
+             int result = newCount.RepeatCounter();
+            
+            //Assert
+            Assert.AreEqual(-1, result);
         
         }
         

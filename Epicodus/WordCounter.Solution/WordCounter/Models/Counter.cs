@@ -39,14 +39,16 @@ namespace WordCounter.Models
         public int RepeatCounter()
         {
             int counter = 0;
-            
+            if(IsWordEmpty())
+            {
+                return -1;
+            }
             for(int i = 0; i < _inputList.Count; i ++)
             {
                  if(_input == (_inputList[i]))
                     {
                         counter++;
                     }
-                    
             }
 
             return counter;
