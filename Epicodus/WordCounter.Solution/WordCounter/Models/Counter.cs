@@ -31,28 +31,29 @@ namespace WordCounter.Models
             {
                return true;
             }
-            else if(_input.Contains(_inputList[0]))
-            {
-                return true;
-            }
+            // else if(_input.Contains(_inputList[0]))
+            // {
+            //     return true;
+            // }
             else
             {
-                return false;
+                while(!_inputList.Any())
+                {
+                    for(int i = 0; i <= _inputList.Count; i ++)
+                    {
+                        if(_input == _inputList[i])
+                        {
+                            return true;
+                        }
+                        else
+                        {
+                            return false;
+                        }
+                    }
+                }
+                 return true;
             }
         }
-
-
-        // public int RepeatCounter ()
-        // {
-        //     if (!_inputList.Any() || _input == "")
-        //     {
-        //         return "Please provide both a word and a list of words.";
-        //     }
-        //     else
-        //     {
-                
-        //     }
-        // }
 
     }
 }

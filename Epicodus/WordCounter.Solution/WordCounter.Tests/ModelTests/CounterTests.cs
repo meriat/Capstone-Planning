@@ -24,11 +24,26 @@ namespace WordCounter.Tests
         
         }
         [TestMethod]
-        public void IsWordNotEmpty_CheckIfInputIsValid_String()
+        public void IsWordNotEmpty_CheckIfInputIsEqual_String()
         {
             //Arrange
             string input = "hello";
-            List<string> inputList = new List<string> {"helo"};
+            List<string> inputList = new List<string> {"hello"};
+            WordChecker newCount = new WordChecker(input,inputList);
+            
+            //Act
+             bool result = newCount.IsWordNotEmpty();
+            
+            //Assert
+            Assert.AreEqual(true, result);
+        
+        }
+        [TestMethod]
+        public void IsWordNotEmpty_CheckIfWordContainsInput_String()
+        {
+            //Arrange
+            string input = "hello";
+            List<string> inputList = new List<string> {"hello","hey","hello"};
             WordChecker newCount = new WordChecker(input,inputList);
             
             //Act
