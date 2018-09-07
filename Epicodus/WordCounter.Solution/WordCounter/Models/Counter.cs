@@ -39,35 +39,17 @@ namespace WordCounter.Models
         public int RepeatCounter()
         {
             int counter = 0;
+            
+            for(int i = 0; i < _inputList.Count; i ++)
+            {
+                 if(_input == (_inputList[i]))
+                    {
+                        counter++;
+                    }
+                    
+            }
 
-             if(_input.Contains(_inputList[0]))
-            {
-                counter++;
-            }
-            else
-            {
-                counter += 0;
-            }
             return counter;
         }
-           
-            // {
-                // while(!_inputList.Any())
-                // {
-                //     for(int i = 0; i <= _inputList.Count; i ++)
-                //     {
-                //         if(_input == _inputList[i])
-                //         {
-                //             return true;
-                //         }
-                //         else
-                //         {
-                //             return false;
-                //         }
-                //     }
-                // }
-            // }
-        
-
     }
 }

@@ -102,20 +102,51 @@ namespace WordCounter.Tests
             Assert.AreEqual(0, result);
         
         }
-        // [TestMethod]
-        // public void IsWordNotEmpty_CheckIfWordContainsInput_String()
-        // {
-        //     //Arrange
-        //     string input = "hello";
-        //     List<string> inputList = new List<string> {"hello","hey","hello"};
-        //     WordChecker newCount = new WordChecker(input,inputList);
+        [TestMethod]
+        public void IsWordNotEmpty_CountMatchingWords_String()
+        {
+            //Arrange
+            string input = "hello";
+            List<string> inputList = new List<string> {"hey","hello","ciao"};
+            WordChecker newCount = new WordChecker(input,inputList);
             
-        //     //Act
-        //      bool result = newCount.IsWordNotEmpty();
+            //Act
+             int result = newCount.RepeatCounter();
             
-        //     //Assert
-        //     Assert.AreEqual(true, result);
+            //Assert
+            Assert.AreEqual(1, result);
         
-        // }
+        }
+        [TestMethod]
+        public void IsWordNotEmpty_CountMatchingWordsFalse_String()
+        {
+            //Arrange
+            string input = "hello";
+            List<string> inputList = new List<string> {"hey","shammonahello","ciao"};
+            WordChecker newCount = new WordChecker(input,inputList);
+            
+            //Act
+             int result = newCount.RepeatCounter();
+            
+            //Assert
+            Assert.AreEqual(0, result);
+        
+        }
+        [TestMethod]
+        public void IsWordNotEmpty_CountMatchingWordsFalse1_String()
+        {
+            //Arrange
+            string input = "shamonahello";
+            List<string> inputList = new List<string> {"hey","hello","ciao"};
+            WordChecker newCount = new WordChecker(input,inputList);
+            
+            //Act
+             int result = newCount.RepeatCounter();
+            
+            //Assert
+            Assert.AreEqual(0, result);
+        
+        }
+        
     }
 }
