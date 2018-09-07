@@ -1,0 +1,7 @@
+C:\Users\josem\Desktop\prework-C#\QueenAttack.Solution\QueenAttack\bin\Debug\netcoreapp1.1\QueenAttack.deps.json
+C:\Users\josem\Desktop\prework-C#\QueenAttack.Solution\QueenAttack\obj\Debug\netcoreapp1.1\QueenAttack.csproj.CoreCompileInputs.cache
+C:\Users\josem\Desktop\prework-C#\QueenAttack.Solution\QueenAttack\obj\Debug\netcoreapp1.1\QueenAttack.AssemblyInfo.cs
+C:\Users\josem\Desktop\prework-C#\QueenAttack.Solution\QueenAttack\bin\Debug\netcoreapp1.1\QueenAttack.dll
+C:\Users\josem\Desktop\prework-C#\QueenAttack.Solution\QueenAttack\bin\Debug\netcoreapp1.1\QueenAttack.pdb
+C:\Users\josem\Desktop\prework-C#\QueenAttack.Solution\QueenAttack\obj\Debug\netcoreapp1.1\QueenAttack.dll
+C:\Users\josem\Desktop\prework-C#\QueenAttack.Solution\QueenAttack\obj\Debug\netcoreapp1.1\QueenAttack.pdb
