@@ -9,9 +9,10 @@ A program that checks how frequently a word appears in a given string. The user 
 
 | Specs    |  Input | Expected Output    
 | ------------- |------------- |:-------------:|
-| Checking to see if two words are not same. |Input!: "hello" & input2: "hi"| false
-| Checking to see if two words are same. Increment the counter by 1. |Input!: "hello" & input2: "hello"| true
-| Checking to see if input2 contains words in input2. Increment the counter by 1.| input1: "hello" & input2: "this is hello world" | true
+| Check to see if input word and list is empty. |Input!: "" & list: ""| false
+| Check to see if input word and list element are not same. |Input!: "hello" & list: "hi"| false
+| Check to see if input word and list element are same. |Input!: "hello" & list: "hello"| true
+| Check to see if word matched any list element. Counter value is number of matches.| input1: "hello" & list: "this is hello world" | 1
 
 
 ## Setup/Installation Requirements
