@@ -9,7 +9,7 @@ namespace WordCounter.Models
     {
         private string _input;
         private List <string> _inputList;
-
+        //add constructor
         public WordChecker(string input, List <string> inputList)
         {
             _input = input;
@@ -38,6 +38,7 @@ namespace WordCounter.Models
         }
         public int RepeatCounter()
         {
+            //compare input to the list elements and output the counter
             int counter = 0;
             if(IsWordEmpty())
             {
