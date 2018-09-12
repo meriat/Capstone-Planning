@@ -12,7 +12,7 @@ namespace WordCounter.Models
         //add constructor
         public WordChecker(string input, List <string> inputList)
         {
-            _input = input;
+            _input = input.ToLower();
             _inputList = inputList;
 
         }
@@ -47,7 +47,7 @@ namespace WordCounter.Models
             }
             for(int i = 0; i < _inputList.Count; i ++)
             {
-                 if(_input == (_inputList[i]))
+                 if(_input == (_inputList[i].ToLower()))
                     {
                         counter++;
                     }

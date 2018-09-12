@@ -12,3 +12,4 @@ C:\Users\josem\Desktop\Epicodus\WordCounter.Solution\WordCounter.Tests\bin\Debug
 C:\Users\josem\Desktop\Epicodus\WordCounter.Solution\WordCounter.Tests\bin\Debug\netcoreapp1.1\WordCounter.pdb
 C:\Users\josem\Desktop\Epicodus\WordCounter.Solution\WordCounter.Tests\obj\Debug\netcoreapp1.1\WordCounter.Tests.dll
 C:\Users\josem\Desktop\Epicodus\WordCounter.Solution\WordCounter.Tests\obj\Debug\netcoreapp1.1\WordCounter.Tests.pdb
+C:\Users\josem\Desktop\Epicodus\WordCounter.Solution\WordCounter.Tests\obj\Debug\netcoreapp1.1\WordCounter.Tests.csprojResolveAssemblyReference.cache

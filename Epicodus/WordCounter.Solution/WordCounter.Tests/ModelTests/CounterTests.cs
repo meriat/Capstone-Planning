@@ -92,14 +92,14 @@ namespace WordCounter.Tests
         {
             //Arrange
             string input = "hello";
-            List<string> inputList = new List<string> {"hey","hello","ciao","hello"};
+            List<string> inputList = new List<string> {"hey","hello","ciao","hello","Hello"};
             WordChecker newCount = new WordChecker(input,inputList);
             
             //Act
              int result = newCount.RepeatCounter();
             
             //Assert
-            Assert.AreEqual(2, result);
+            Assert.AreEqual(3, result);
         
         }
         [TestMethod]
