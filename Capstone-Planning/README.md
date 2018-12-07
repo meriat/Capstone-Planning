@@ -33,6 +33,9 @@ An app that provide a personalized feed of clothing  from fashion websites all a
 - Add more preference options
 - Add like/dislike for each piece of clothing
 
+### Component Structure
+![screen shot](./img/flowchart.PNG)
+
 ## Setup/Installation Requirements
 
 - Clone this repository
