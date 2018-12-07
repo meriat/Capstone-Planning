@@ -16,15 +16,23 @@ An app that provide a personalized feed of clothing  from fashion websites all a
 
 - React
 - Redux
-- MySql
+- MySql or SQLite
 - Node
 - Bootstrap
 
-### Additional Features
+### User-page Layout
 
+![screen shot](./img/userpagelayout.PNG)
+
+#### Header Component (orange): contains the header
+#### ProductList Component(blue): list of products available
+#### Product Component(purple): consist of product structure
+
+### Additional Features
 
 - Add more preference options
 - Add like/dislike for each piece of clothing
+
 ## Setup/Installation Requirements
 
 - Clone this repository
