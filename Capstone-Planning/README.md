@@ -1,6 +1,7 @@
 # BrowsEasy
 
-#### By Meria Thomas
+### By Meria Thomas
+##### Static repo: https://github.com/meriat/browsEasy.git
 
 ## Project Description
 An app that provide a personalized feed of clothing  from fashion websites all around the web.
